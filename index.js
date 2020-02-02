@@ -31,4 +31,4 @@ bot.on('messageReactionRemove', (reaction, user) => {
     if (reaction.message.id == messageID) roleAssigner.removeRole(reaction, user);
 });
 
-bot.login(TOKEN);
+bot.login(client.config.token);
